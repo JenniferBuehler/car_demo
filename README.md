@@ -59,7 +59,7 @@ If using a Logitech F710 controller:
 * A puts the car into REVERSE
 * B puts the car into NEUTRAL
 
-# Running directktm without Docker
+# Running directly without Docker
 
 If you have ROS already set up on your system, there is no need to
 go via docker, you can run the demo directly.
@@ -83,23 +83,23 @@ have to set the default value of `keyControl` in
 
 ### Mode A
 
-e - gas pedal
-w - release pedals
-q - brake
-a - steer left
-d - steer right
-s - center steering
-z - reverse
-x - neutral
-c - forward
+* e - gas pedal
+* w - release pedals
+* q - brake
+* a - steer left
+* d - steer right
+* s - center steering
+* z - reverse
+* x - neutral
+* c - forward
 
 ### Mode B
 
-w - accelerate forward
-a - steer left
-s - reverse
-d - steer right
-e - brake
-x - neutral
-q - EV mode
+* w - accelerate forward
+* a - steer left
+* s - reverse
+* d - steer right
+* e - brake
+* x - neutral
+* q - EV mode
 
