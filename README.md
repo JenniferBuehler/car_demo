@@ -58,3 +58,48 @@ If using a Logitech F710 controller:
 * Y puts the car into DRIVE
 * A puts the car into REVERSE
 * B puts the car into NEUTRAL
+
+# Running directktm without Docker
+
+If you have ROS already set up on your system, there is no need to
+go via docker, you can run the demo directly.
+
+Add this repository to your catkin workspace and build as usual.
+Then launch with 
+
+`roslaunch car_demo demo.launch`
+
+If you don't have a joystick, and want to use keyboard control
+(and avoid errors due to no joystick found), use
+
+`roslaunch car_demo demo.launch use_joystick:=false`
+
+## Keyboard control
+
+There are two modes, default is Mode B.
+Unfortunately at this point switching of modes is not supported, you 
+have to set the default value of `keyControl` in
+`car_demo/plugins/PriusHybridPlugin.cc` and re-compile.
+
+### Mode A
+
+e - gas pedal
+w - release pedals
+q - brake
+a - steer left
+d - steer right
+s - center steering
+z - reverse
+x - neutral
+c - forward
+
+### Mode B
+
+w - accelerate forward
+a - steer left
+s - reverse
+d - steer right
+e - brake
+x - neutral
+q - EV mode
+
