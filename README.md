@@ -64,7 +64,8 @@ If using a Logitech F710 controller:
 If you have ROS already set up on your system, there is no need to
 go via docker, you can run the demo directly.
 
-Add this repository to your catkin workspace and build as usual.
+You will need to build the [citysim](https://bitbucket.org/osrf/citysim) package for Gazebo first.
+Then add this repository to your catkin workspace and build as usual.
 Then launch with 
 
 `roslaunch car_demo demo.launch`
@@ -102,4 +103,3 @@ have to set the default value of `keyControl` in
 * e - brake
 * x - neutral
 * q - EV mode
-
