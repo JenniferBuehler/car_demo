@@ -64,7 +64,8 @@ If using a Logitech F710 controller:
 If you have ROS already set up on your system, there is no need to
 go via docker, you can run the demo directly.
 
-You will need to build the [citysim](https://bitbucket.org/osrf/citysim) package for Gazebo first.
+If you want to use the citysim world, you will need to build the [citysim](https://bitbucket.org/osrf/citysim) package for Gazebo.
+
 Then add this repository to your catkin workspace and build as usual.
 Then launch with 
 
